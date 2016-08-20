@@ -317,9 +317,13 @@ public class MainViewController {
 		if (muscleMilk.isSelected()) {
 	        minDamage = minDamage * muscleMilkDamage;
 	        maxDamage = maxDamage * muscleMilkDamage;
+	        minThrowDamage = minThrowDamage * muscleMilkDamage;
+	        maxThrowDamage = maxThrowDamage * muscleMilkDamage;
 	    } else if (!muscleMilk.isSelected()) {
 	    	minDamage = minDamage / muscleMilkDamage;
 	    	maxDamage = maxDamage / muscleMilkDamage;
+	    	minThrowDamage = minThrowDamage / muscleMilkDamage;
+	    	maxThrowDamage = maxThrowDamage / muscleMilkDamage;
 	    }
 
 		showDamage();
