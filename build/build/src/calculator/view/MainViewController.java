@@ -60,9 +60,41 @@ public class MainViewController {
 	@FXML
 	private Label throwDamageEquals;
 	@FXML
-	private CheckBox perkOlPainless, perkMasterCrafter, perkGoldenArm, perkLongshot, perkKnuckleDragger,
-	perkBrutusSneakyPoker, perkToughMother, perkThickSkin, perkBombSuit, backstab, muscleMilk, headshot,
-	armor, iron4Skin, expose1, expose2, expose3, exposeTrapper;
+	private CheckBox perkOlPainless;
+	@FXML
+	private CheckBox perkMasterCrafter;
+	@FXML
+	private CheckBox perkGoldenArm;
+	@FXML
+	private CheckBox perkLongshot;
+	@FXML
+	private CheckBox perkKnuckleDragger;
+	@FXML
+	private CheckBox perkBrutusSneakyPoker;
+	@FXML
+	private CheckBox perkToughMother;
+	@FXML
+	private CheckBox perkThickSkin;
+	@FXML
+	private CheckBox perkBombSuit;
+	@FXML
+	private CheckBox backstab;
+	@FXML
+	private CheckBox muscleMilk;
+	@FXML
+	private CheckBox headshot;
+	@FXML
+	private CheckBox armor;
+	@FXML
+	private CheckBox iron4Skin;
+	@FXML
+	private CheckBox expose1;
+	@FXML
+	private CheckBox expose2;
+	@FXML
+	private CheckBox expose3;
+	@FXML
+	private CheckBox exposeTrapper;
 	@FXML
 	public ComboBox<String> weaponSelectBox;
 
