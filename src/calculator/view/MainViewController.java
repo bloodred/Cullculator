@@ -13,6 +13,7 @@ public class MainViewController {
 
 	double minDamage, maxDamage, minThrowDamage, maxThrowDamage;
 
+	//test
 
 	double olPainlessDamage = 1.1;
 	double masterCrafterDamage = 1.1;
