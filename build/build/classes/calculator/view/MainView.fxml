@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="506.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.view.MainViewController">
+   <children>
+      <VBox layoutX="123.0" layoutY="25.0" spacing="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="weaponSelectBox" onAction="#weaponChoice" prefHeight="25.0" prefWidth="1100.0" promptText="Select Weapon">
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </ComboBox>
+            <SplitPane dividerPositions="0.5" prefHeight="176.0" prefWidth="306.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox layoutX="27.0" layoutY="14.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="419.0" text="Attacker Perks" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Separator prefWidth="200.0" />
+                              <CheckBox fx:id="perkOlPainless" mnemonicParsing="false" onAction="#calculateOlPainless" text="Ol' Painless" />
+                              <CheckBox fx:id="perkGoldenArm" disable="true" layoutX="10.0" layoutY="27.0" mnemonicParsing="false" onAction="#calculateGoldenArm" text="Golden Arm" />
+                              <CheckBox fx:id="perkMasterCrafter" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#calculateMasterCrafter" text="Master Crafter" />
+                              <CheckBox fx:id="perkBrutusSneakyPoker" disable="true" mnemonicParsing="false" onAction="#calculateBrutusSneakyPoker" text="Brutus/Sneaky Poker" />
+                              <CheckBox fx:id="perkKnuckleDragger" disable="true" mnemonicParsing="false" onAction="#calculateKnuckleDragger" text="Knuckle Dragger" />
+                              <CheckBox fx:id="perkLongshot" disable="true" mnemonicParsing="false" onAction="#calculateLongshot" text="Longshot" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </VBox>
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox layoutX="33.0" layoutY="14.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="419.0" text="Receiver Perks" />
+                              <Separator prefWidth="200.0" />
+                              <CheckBox fx:id="perkToughMother" mnemonicParsing="false" onAction="#calculateToughMother" text="Tough Mother" />
+                              <CheckBox fx:id="perkThickSkin" disable="true" mnemonicParsing="false" onAction="#calculateThickSkin" text="Thick Skin" />
+                              <CheckBox fx:id="perkBombSuit" disable="true" mnemonicParsing="false" onAction="#calculateBombSuit" text="Bomb Suit" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding></VBox>
+                     </children></AnchorPane>
+              </items>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox layoutX="35.0" layoutY="-12.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="151.0" text="Other" />
+                              <Separator prefWidth="200.0" />
+                              <CheckBox fx:id="armor" mnemonicParsing="false" onAction="#calculateArmor" text="Armor" />
+                              <CheckBox fx:id="backstab" disable="true" mnemonicParsing="false" onAction="#calculateBackstab" text="Backstab" />
+                              <CheckBox fx:id="muscleMilk" disable="true" mnemonicParsing="false" onAction="#calculateMusclemilk" text="Muscleman Milk" />
+                              <CheckBox fx:id="iron4Skin" mnemonicParsing="false" onAction="#calculateiron4Skin" text="Iron 4 Skin" />
+                              <CheckBox fx:id="headshot" disable="true" mnemonicParsing="false" onAction="#calculateHeadshot" text="Headshot" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <VBox layoutX="25.0" layoutY="-32.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="11.0" prefWidth="156.0" text="Expose" />
+                              <Separator prefWidth="200.0" />
+                              <CheckBox fx:id="expose1" mnemonicParsing="false" onAction="#calculateExpose1" text="*" />
+                              <CheckBox fx:id="expose2" mnemonicParsing="false" onAction="#calculateExpose2" text="**" />
+                              <CheckBox fx:id="expose3" mnemonicParsing="false" onAction="#calculateExpose3" text="***" />
+                              <CheckBox fx:id="exposeTrapper" mnemonicParsing="false" onAction="#calculateExposeTrapper" text="Trapper" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+               <VBox.margin>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </SplitPane>
+            <SplitPane prefHeight="71.0" prefWidth="306.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <items>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="142.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="65.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="97.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="minDamageLabel" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="maxDamageLabel" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="minThrowDamageLabel" layoutX="10.0" layoutY="19.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </GridPane.margin></Label>
+                        <Label fx:id="maxThrowDamageLabel" layoutX="60.0" layoutY="19.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Weapon Damage =" GridPane.columnSpan="2">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="throwDamageEquals" layoutX="18.0" layoutY="19.0" text="Throw Damage = " GridPane.columnSpan="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="damageDash" text="-" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="48.0" top="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="throwDash" layoutX="202.0" layoutY="19.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="8.0" left="48.0" top="8.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </items>
+            </SplitPane>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
