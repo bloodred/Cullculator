@@ -8,7 +8,7 @@ To download click the green "Clone or download" button and select "Download .zip
 You must have Java 8 installed for this program to run, you can download it [here!](https://java.com/en/download/)  
 
 
-Special thanks to:
+Special thanks to:  
 jmeyer2k  
 Katpiss Everbeans  
 gw300xl   
