@@ -19,7 +19,7 @@ public class MainViewController {
 	double longshotDamage = 1.6;
 	double goldenArmDamage = 2;
 	double knuckleDraggerDamage = 1.5;
-	double brutusSneakyPokerDamage = 2;
+	double brutusSneakyPokerDamage = 1.5;
 	double expose1Damage = 1.1;
 	double expose2Damage = 1.15;
 	double expose3Damage = 1.2;
@@ -205,11 +205,15 @@ public class MainViewController {
 
 	        minDamage = minDamage * brutusSneakyPokerDamage;
 	        maxDamage = maxDamage * brutusSneakyPokerDamage;
+	    	minDamage = minDamage * backstabDamage;
+	    	maxDamage = maxDamage * backstabDamage;
 	        backstab.setSelected(false);
 			backstab.setDisable(true);
 	    } else if (!perkBrutusSneakyPoker.isSelected()) {
 	    	minDamage = minDamage / brutusSneakyPokerDamage;
 	    	maxDamage = maxDamage / brutusSneakyPokerDamage;
+	    	minDamage = minDamage / backstabDamage;
+	    	maxDamage = maxDamage / backstabDamage;
 			backstab.setDisable(false);
 	    }
 
