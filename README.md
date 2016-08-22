@@ -9,6 +9,6 @@ You must have Java 8 installed for this program to run, you can download it [her
 
 
 Special thanks to:  
-  jmeyer2k  
-  Katpiss Everbeans  
-  gw300xl   
+jmeyer2k  
+Katpiss Everbeans  
+gw300xl  
