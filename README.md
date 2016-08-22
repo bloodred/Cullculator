@@ -1,3 +1,4 @@
 # Cullculator
 
-[img]http://i.imgur.com/DFByFaw.png[/img]
+![My image](http://i.imgur.com/DFByFaw.png)
+
