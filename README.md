@@ -1,4 +1,5 @@
-# Cullculator
+# Cullculator - by bloodred
+twitch.tv/loc_blood_red
 
 ![My image](http://i.imgur.com/DFByFaw.png)
 
