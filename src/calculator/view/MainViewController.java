@@ -45,6 +45,8 @@ public class MainViewController {
 			 "Revolver", "SMG", "Rifle");
 
 	@FXML
+	private Label versionNumber;
+	@FXML
 	private Label minDamageLabel;
 	@FXML
 	private Label maxDamageLabel;
@@ -111,25 +113,26 @@ public class MainViewController {
 		throwDash.setVisible(false);
 		throwDamageEquals.setVisible(false);
 		backstabDamageEquals.setVisible(false);
+		versionNumber.setText("v1.3.1");
 	}
 
 	@FXML
 	private void calculateOlPainless() {
 
 		if (perkOlPainless.isSelected()) {
-	        minDamage = minDamage * olPainlessDamage;
-	        maxDamage = maxDamage * olPainlessDamage;
-	        minThrowDamage = minThrowDamage * olPainlessDamage;
-	        maxThrowDamage = maxThrowDamage * olPainlessDamage;
-	        minBackstabDamage = minBackstabDamage * olPainlessDamage;
-	        maxBackstabDamage = maxBackstabDamage * olPainlessDamage;
+	        minDamage *= olPainlessDamage;
+	        maxDamage *= olPainlessDamage;
+	        minThrowDamage *= olPainlessDamage;
+	        maxThrowDamage *= olPainlessDamage;
+	        minBackstabDamage *= olPainlessDamage;
+	        maxBackstabDamage *= olPainlessDamage;
 	    } else if (!perkOlPainless.isSelected()) {
-	    	minDamage = minDamage / olPainlessDamage;
-	    	maxDamage = maxDamage / olPainlessDamage;
-	    	minThrowDamage = minThrowDamage / olPainlessDamage;
-	    	maxThrowDamage = maxThrowDamage / olPainlessDamage;
-	        minBackstabDamage = minBackstabDamage / olPainlessDamage;
-	        maxBackstabDamage = maxBackstabDamage / olPainlessDamage;
+	    	minDamage /= olPainlessDamage;
+	    	maxDamage /= olPainlessDamage;
+	    	minThrowDamage /= olPainlessDamage;
+	    	maxThrowDamage /= olPainlessDamage;
+	        minBackstabDamage /= olPainlessDamage;
+	        maxBackstabDamage /= olPainlessDamage;
 	    }
 
 		showDamage();
@@ -139,15 +142,15 @@ public class MainViewController {
 	private void calculateKnuckleDragger() {
 
 		if (perkKnuckleDragger.isSelected()) {
-	        minDamage = minDamage * knuckleDraggerDamage;
-	        maxDamage = maxDamage * knuckleDraggerDamage;
-	        minBackstabDamage = minBackstabDamage * knuckleDraggerDamage;
-	        maxBackstabDamage = maxBackstabDamage * knuckleDraggerDamage;
+	        minDamage *= knuckleDraggerDamage;
+	        maxDamage *= knuckleDraggerDamage;
+	        minBackstabDamage *= knuckleDraggerDamage;
+	        maxBackstabDamage *= knuckleDraggerDamage;
 	    } else if (!perkKnuckleDragger.isSelected()) {
-	    	minDamage = minDamage / knuckleDraggerDamage;
-	    	maxDamage = maxDamage / knuckleDraggerDamage;
-	        minBackstabDamage = minBackstabDamage / knuckleDraggerDamage;
-	        maxBackstabDamage = maxBackstabDamage / knuckleDraggerDamage;
+	    	minDamage /= knuckleDraggerDamage;
+	    	maxDamage /= knuckleDraggerDamage;
+	        minBackstabDamage /= knuckleDraggerDamage;
+	        maxBackstabDamage /= knuckleDraggerDamage;
 	    }
 
 		showDamage();
@@ -166,11 +169,11 @@ public class MainViewController {
 		}
 
 		if (perkGoldenArm.isSelected()) {
-	        minThrowDamage = minThrowDamage * goldenArmDamage;
-	        maxThrowDamage = maxThrowDamage * goldenArmDamage;
+	        minThrowDamage *= goldenArmDamage;
+	        maxThrowDamage *= goldenArmDamage;
 	    } else if (!perkKnuckleDragger.isSelected()) {
-	    	minThrowDamage = minThrowDamage / goldenArmDamage;
-	    	maxThrowDamage = maxThrowDamage / goldenArmDamage;
+	    	minThrowDamage /= goldenArmDamage;
+	    	maxThrowDamage /= goldenArmDamage;
 	    }
 
 		showDamage();
@@ -181,11 +184,11 @@ public class MainViewController {
 
 
 		if (perkLongshot.isSelected()) {
-	        minDamage = minDamage * longshotDamage;
-	        maxDamage = maxDamage * longshotDamage;
+	        minDamage *= longshotDamage;
+	        maxDamage *= longshotDamage;
 	    } else if (!perkLongshot.isSelected()) {
-	    	minDamage = minDamage / longshotDamage;
-	    	maxDamage = maxDamage / longshotDamage;
+	    	minDamage /= longshotDamage;
+	    	maxDamage /= longshotDamage;
 	    }
 
 		showDamage();
@@ -195,15 +198,15 @@ public class MainViewController {
 	private void calculateMasterCrafter() {
 
 		if (perkMasterCrafter.isSelected()) {
-	        minDamage = minDamage * masterCrafterDamage;
-	        maxDamage = maxDamage * masterCrafterDamage;
-	        minBackstabDamage = minBackstabDamage * masterCrafterDamage;
-	        maxBackstabDamage = maxBackstabDamage * masterCrafterDamage;
+	        minDamage *= masterCrafterDamage;
+	        maxDamage *= masterCrafterDamage;
+	        minBackstabDamage *= masterCrafterDamage;
+	        maxBackstabDamage *= masterCrafterDamage;
 	    } else if (!perkMasterCrafter.isSelected()) {
-	    	minDamage = minDamage / masterCrafterDamage;
-	    	maxDamage = maxDamage / masterCrafterDamage;
-	        minBackstabDamage = minBackstabDamage / masterCrafterDamage;
-	        maxBackstabDamage = maxBackstabDamage / masterCrafterDamage;
+	    	minDamage /= masterCrafterDamage;
+	    	maxDamage /= masterCrafterDamage;
+	        minBackstabDamage /= masterCrafterDamage;
+	        maxBackstabDamage /= masterCrafterDamage;
 	    }
 		//Master Crafter does 5% extra damage to thrown crafted weapons, however Xaviant just told me it is on their to do list to fix so I wont be coding it in
 		showDamage();
@@ -215,11 +218,11 @@ public class MainViewController {
 
 		if (perkBrutusSneakyPoker.isSelected()) {
 
-	        minBackstabDamage = minBackstabDamage * brutusSneakyPokerDamage;
-	        maxBackstabDamage = maxBackstabDamage * brutusSneakyPokerDamage;
+	        minBackstabDamage *= brutusSneakyPokerDamage;
+	        maxBackstabDamage *= brutusSneakyPokerDamage;
 	    } else if (!perkBrutusSneakyPoker.isSelected()) {
-	    	minBackstabDamage = minBackstabDamage / brutusSneakyPokerDamage;
-	        maxBackstabDamage = maxBackstabDamage / brutusSneakyPokerDamage;
+	    	minBackstabDamage /= brutusSneakyPokerDamage;
+	        maxBackstabDamage /= brutusSneakyPokerDamage;
 	    }
 
 		showDamage();
@@ -229,19 +232,19 @@ public class MainViewController {
 	private void calculateToughMother() {
 
 		if (perkToughMother.isSelected()) {
-	        minDamage = minDamage * toughMotherDamage;
-	        maxDamage = maxDamage * toughMotherDamage;
-	        minBackstabDamage = minBackstabDamage * toughMotherDamage;
-	        maxBackstabDamage = maxBackstabDamage * toughMotherDamage;
-	        minThrowDamage = minThrowDamage * toughMotherDamage;
-	        maxThrowDamage = maxThrowDamage * toughMotherDamage;
+	        minDamage *= toughMotherDamage;
+	        maxDamage *= toughMotherDamage;
+	        minBackstabDamage *= toughMotherDamage;
+	        maxBackstabDamage *= toughMotherDamage;
+	        minThrowDamage *= toughMotherDamage;
+	        maxThrowDamage *= toughMotherDamage;
 	    } else if (!perkToughMother.isSelected()) {
-	    	minDamage = minDamage / toughMotherDamage;
-	    	maxDamage = maxDamage / toughMotherDamage;
-	        minBackstabDamage = minBackstabDamage / toughMotherDamage;
-	        maxBackstabDamage = maxBackstabDamage / toughMotherDamage;
-	    	minThrowDamage = minThrowDamage / toughMotherDamage;
-	    	maxThrowDamage = maxThrowDamage / toughMotherDamage;
+	    	minDamage /= toughMotherDamage;
+	    	maxDamage /= toughMotherDamage;
+	        minBackstabDamage /= toughMotherDamage;
+	        maxBackstabDamage /= toughMotherDamage;
+	    	minThrowDamage /= toughMotherDamage;
+	    	maxThrowDamage /= toughMotherDamage;
 	    }
 
 		showDamage();
@@ -255,11 +258,11 @@ public class MainViewController {
 					| weaponSelectBox.getValue().equals("Recurve Bow")
 					| weaponSelectBox.getValue().equals("Compound Bow")
 					| weaponSelectBox.getValue().equals("Auto Bow")) {
-				minDamage = minDamage * thickSkinDamage;
-				maxDamage = maxDamage * thickSkinDamage;
+				minDamage *= thickSkinDamage;
+				maxDamage *= thickSkinDamage;
 			} else {
-		        minThrowDamage = minThrowDamage * thickSkinDamage;
-		        maxThrowDamage = maxThrowDamage * thickSkinDamage;
+		        minThrowDamage *= thickSkinDamage;
+		        maxThrowDamage *= thickSkinDamage;
 			}
 
 	    } else if (!perkThickSkin.isSelected()) {
@@ -267,11 +270,11 @@ public class MainViewController {
 					| weaponSelectBox.getValue().equals("Recurve Bow")
 					| weaponSelectBox.getValue().equals("Compound Bow")
 					| weaponSelectBox.getValue().equals("Auto Bow")) {
-				minDamage = minDamage / thickSkinDamage;
-				maxDamage = maxDamage / thickSkinDamage;
+				minDamage /= thickSkinDamage;
+				maxDamage /= thickSkinDamage;
 			} else {
-		        minThrowDamage = minThrowDamage / thickSkinDamage;
-		        maxThrowDamage = maxThrowDamage / thickSkinDamage;
+		        minThrowDamage /= thickSkinDamage;
+		        maxThrowDamage /= thickSkinDamage;
 			}
 	    }
 
@@ -282,11 +285,11 @@ public class MainViewController {
 	private void calculateBombSuit() {
 
 		if (perkBombSuit.isSelected()) {
-	        minDamage = minDamage * bombSuitDamage;
-	        maxDamage = maxDamage * bombSuitDamage;
+	        minDamage *= bombSuitDamage;
+	        maxDamage *= bombSuitDamage;
 	    } else if (!perkBombSuit.isSelected()) {
-	    	minDamage = minDamage / bombSuitDamage;
-	    	maxDamage = maxDamage / bombSuitDamage;
+	    	minDamage /= bombSuitDamage;
+	    	maxDamage /= bombSuitDamage;
 	    }
 
 		showDamage();
@@ -296,19 +299,19 @@ public class MainViewController {
 	private void calculateArmor() {
 
 		if (armor.isSelected()) {
-	        minDamage = minDamage * armorDamage;
-	        maxDamage = maxDamage * armorDamage;
-	        minBackstabDamage = minBackstabDamage * armorDamage;
-	        maxBackstabDamage = maxBackstabDamage * armorDamage;
-	        minThrowDamage = minThrowDamage * armorDamage;
-	        maxThrowDamage = maxThrowDamage * armorDamage;
+	        minDamage *= armorDamage;
+	        maxDamage *= armorDamage;
+	        minBackstabDamage *= armorDamage;
+	        maxBackstabDamage *= armorDamage;
+	        minThrowDamage *= armorDamage;
+	        maxThrowDamage *= armorDamage;
 	    } else if (!armor.isSelected()) {
-	    	minDamage = minDamage / armorDamage;
-	    	maxDamage = maxDamage / armorDamage;
-	        minBackstabDamage = minBackstabDamage / armorDamage;
-	        maxBackstabDamage = maxBackstabDamage / armorDamage;
-	    	minThrowDamage = minThrowDamage / armorDamage;
-	    	maxThrowDamage = maxThrowDamage / armorDamage;
+	    	minDamage /= armorDamage;
+	    	maxDamage /= armorDamage;
+	        minBackstabDamage /= armorDamage;
+	        maxBackstabDamage /= armorDamage;
+	    	minThrowDamage /= armorDamage;
+	    	maxThrowDamage /= armorDamage;
 	    }
 
 		showDamage();
@@ -318,19 +321,19 @@ public class MainViewController {
 	private void calculateMusclemilk() {
 
 		if (muscleMilk.isSelected()) {
-	        minDamage = minDamage * muscleMilkDamage;
-	        maxDamage = maxDamage * muscleMilkDamage;
-	        minBackstabDamage = minBackstabDamage * muscleMilkDamage;
-	        maxBackstabDamage = maxBackstabDamage * muscleMilkDamage;
-	        minThrowDamage = minThrowDamage * muscleMilkDamage;
-	        maxThrowDamage = maxThrowDamage * muscleMilkDamage;
+	        minDamage *= muscleMilkDamage;
+	        maxDamage *= muscleMilkDamage;
+	        minBackstabDamage *= muscleMilkDamage;
+	        maxBackstabDamage *= muscleMilkDamage;
+	        minThrowDamage *= muscleMilkDamage;
+	        maxThrowDamage *= muscleMilkDamage;
 	    } else if (!muscleMilk.isSelected()) {
-	    	minDamage = minDamage / muscleMilkDamage;
-	    	maxDamage = maxDamage / muscleMilkDamage;
-	        minBackstabDamage = minBackstabDamage / muscleMilkDamage;
-	        maxBackstabDamage = maxBackstabDamage / muscleMilkDamage;
-	    	minThrowDamage = minThrowDamage / muscleMilkDamage;
-	    	maxThrowDamage = maxThrowDamage / muscleMilkDamage;
+	    	minDamage /= muscleMilkDamage;
+	    	maxDamage /= muscleMilkDamage;
+	        minBackstabDamage /= muscleMilkDamage;
+	        maxBackstabDamage /= muscleMilkDamage;
+	    	minThrowDamage /= muscleMilkDamage;
+	    	maxThrowDamage /= muscleMilkDamage;
 	    }
 
 		showDamage();
@@ -340,19 +343,19 @@ public class MainViewController {
 	private void calculateiron4Skin() {
 
 		if (iron4Skin.isSelected()) {
-	        minDamage = minDamage * iron4SkinDamage;
-	        maxDamage = maxDamage * iron4SkinDamage;
-	        minBackstabDamage = minBackstabDamage * iron4SkinDamage;
-	        maxBackstabDamage = maxBackstabDamage * iron4SkinDamage;
-	        minThrowDamage = minThrowDamage * iron4SkinDamage;
-	        maxThrowDamage = maxThrowDamage * iron4SkinDamage;
+	        minDamage *= iron4SkinDamage;
+	        maxDamage *= iron4SkinDamage;
+	        minBackstabDamage *= iron4SkinDamage;
+	        maxBackstabDamage *= iron4SkinDamage;
+	        minThrowDamage *= iron4SkinDamage;
+	        maxThrowDamage *= iron4SkinDamage;
 	    } else if (!iron4Skin.isSelected()) {
-	    	minDamage = minDamage / iron4SkinDamage;
-	    	maxDamage = maxDamage / iron4SkinDamage;
-	        minBackstabDamage = minBackstabDamage / iron4SkinDamage;
-	        maxBackstabDamage = maxBackstabDamage / iron4SkinDamage;
-	    	minThrowDamage = minThrowDamage / iron4SkinDamage;
-	    	maxThrowDamage = maxThrowDamage / iron4SkinDamage;
+	    	minDamage /= iron4SkinDamage;
+	    	maxDamage /= iron4SkinDamage;
+	        minBackstabDamage /= iron4SkinDamage;
+	        maxBackstabDamage /= iron4SkinDamage;
+	    	minThrowDamage /= iron4SkinDamage;
+	    	maxThrowDamage /= iron4SkinDamage;
 	    }
 
 		showDamage();
@@ -362,11 +365,11 @@ public class MainViewController {
 	private void calculateHeadshot() {
 
 		if (headshot.isSelected()) {
-	        minDamage = minDamage * headshotDamage;
-	        maxDamage = maxDamage * headshotDamage;
+	        minDamage *= headshotDamage;
+	        maxDamage *= headshotDamage;
 	    } else if (!headshot.isSelected()) {
-	    	minDamage = minDamage / headshotDamage;
-	    	maxDamage = maxDamage / headshotDamage;
+	    	minDamage /= headshotDamage;
+	    	maxDamage /= headshotDamage;
 	    }
 
 		showDamage();
@@ -376,22 +379,22 @@ public class MainViewController {
 	private void calculateExpose1() {
 
 		if (expose1.isSelected()) {
-	        minDamage = minDamage * expose1Damage;
-	        maxDamage = maxDamage * expose1Damage;
-	        minBackstabDamage = minBackstabDamage * expose1Damage;
-	        maxBackstabDamage = maxBackstabDamage * expose1Damage;
-	        minThrowDamage = minThrowDamage * expose1Damage;
-	        maxThrowDamage = maxThrowDamage * expose1Damage;
+	        minDamage *= expose1Damage;
+	        maxDamage *= expose1Damage;
+	        minBackstabDamage *= expose1Damage;
+	        maxBackstabDamage *= expose1Damage;
+	        minThrowDamage *= expose1Damage;
+	        maxThrowDamage *= expose1Damage;
 	        expose2.setDisable(true);
 			expose3.setDisable(true);
 			exposeTrapper.setDisable(true);
 	    } else if (!expose1.isSelected()) {
-	    	minDamage = minDamage / expose1Damage;
-	    	maxDamage = maxDamage / expose1Damage;
-	        minBackstabDamage = minBackstabDamage / expose1Damage;
-	        maxBackstabDamage = maxBackstabDamage / expose1Damage;
-	    	minThrowDamage = minThrowDamage / expose1Damage;
-	    	maxThrowDamage = maxThrowDamage / expose1Damage;
+	    	minDamage /= expose1Damage;
+	    	maxDamage /= expose1Damage;
+	        minBackstabDamage /= expose1Damage;
+	        maxBackstabDamage /= expose1Damage;
+	    	minThrowDamage /= expose1Damage;
+	    	maxThrowDamage /= expose1Damage;
 			expose2.setDisable(false);
 			expose3.setDisable(false);
 			exposeTrapper.setDisable(false);
@@ -404,22 +407,22 @@ public class MainViewController {
 	private void calculateExpose2() {
 
 		if (expose2.isSelected()) {
-	        minDamage = minDamage * expose2Damage;
-	        maxDamage = maxDamage * expose2Damage;
-	        minBackstabDamage = minBackstabDamage * expose2Damage;
-	        maxBackstabDamage = maxBackstabDamage * expose2Damage;
-	        minThrowDamage = minThrowDamage * expose2Damage;
-	        maxThrowDamage = maxThrowDamage * expose2Damage;
+	        minDamage *= expose2Damage;
+	        maxDamage *= expose2Damage;
+	        minBackstabDamage *= expose2Damage;
+	        maxBackstabDamage *= expose2Damage;
+	        minThrowDamage *= expose2Damage;
+	        maxThrowDamage *= expose2Damage;
 	        expose1.setDisable(true);
 			expose3.setDisable(true);
 			exposeTrapper.setDisable(true);
 	    } else if (!expose2.isSelected()) {
-	    	minDamage = minDamage / expose2Damage;
-	    	maxDamage = maxDamage / expose2Damage;
-	        minBackstabDamage = minBackstabDamage / expose2Damage;
-	        maxBackstabDamage = maxBackstabDamage / expose2Damage;
-	    	minThrowDamage = minThrowDamage / expose2Damage;
-	    	maxThrowDamage = maxThrowDamage / expose2Damage;
+	    	minDamage /= expose2Damage;
+	    	maxDamage /= expose2Damage;
+	        minBackstabDamage /= expose2Damage;
+	        maxBackstabDamage /= expose2Damage;
+	    	minThrowDamage /= expose2Damage;
+	    	maxThrowDamage /= expose2Damage;
 			expose1.setDisable(false);
 			expose3.setDisable(false);
 			exposeTrapper.setDisable(false);
@@ -432,22 +435,22 @@ public class MainViewController {
 	private void calculateExpose3() {
 
 		if (expose3.isSelected()) {
-	        minDamage = minDamage * expose3Damage;
-	        maxDamage = maxDamage * expose3Damage;
-	        minBackstabDamage = minBackstabDamage * expose3Damage;
-	        maxBackstabDamage = maxBackstabDamage * expose3Damage;
-	        minThrowDamage = minThrowDamage * expose3Damage;
-	        maxThrowDamage = maxThrowDamage * expose3Damage;
+	        minDamage *= expose3Damage;
+	        maxDamage *= expose3Damage;
+	        minBackstabDamage *= expose3Damage;
+	        maxBackstabDamage *= expose3Damage;
+	        minThrowDamage *= expose3Damage;
+	        maxThrowDamage *= expose3Damage;
 	        expose1.setDisable(true);
 			expose2.setDisable(true);
 			exposeTrapper.setDisable(true);
 	    } else if (!expose3.isSelected()) {
-	    	minDamage = minDamage / expose3Damage;
-	    	maxDamage = maxDamage / expose3Damage;
-	        minBackstabDamage = minBackstabDamage / expose3Damage;
-	        maxBackstabDamage = maxBackstabDamage / expose3Damage;
-	    	minThrowDamage = minThrowDamage / expose3Damage;
-	    	maxThrowDamage = maxThrowDamage / expose3Damage;
+	    	minDamage /= expose3Damage;
+	    	maxDamage /= expose3Damage;
+	        minBackstabDamage /= expose3Damage;
+	        maxBackstabDamage /= expose3Damage;
+	    	minThrowDamage /= expose3Damage;
+	    	maxThrowDamage /= expose3Damage;
 			expose1.setDisable(false);
 			expose2.setDisable(false);
 			exposeTrapper.setDisable(false);
@@ -460,22 +463,22 @@ public class MainViewController {
 	private void calculateExposeTrapper() {
 
 		if (exposeTrapper.isSelected()) {
-	        minDamage = minDamage * exposeTrapperDamage;
-	        maxDamage = maxDamage * exposeTrapperDamage;
-	        minBackstabDamage = minBackstabDamage * exposeTrapperDamage;
-	        maxBackstabDamage = maxBackstabDamage * exposeTrapperDamage;
-	        minThrowDamage = minThrowDamage * exposeTrapperDamage;
-	        maxThrowDamage = maxThrowDamage * exposeTrapperDamage;
+	        minDamage *= exposeTrapperDamage;
+	        maxDamage *= exposeTrapperDamage;
+	        minBackstabDamage *= exposeTrapperDamage;
+	        maxBackstabDamage *= exposeTrapperDamage;
+	        minThrowDamage *= exposeTrapperDamage;
+	        maxThrowDamage *= exposeTrapperDamage;
 	        expose1.setDisable(true);
 			expose3.setDisable(true);
 			expose2.setDisable(true);
 	    } else if (!exposeTrapper.isSelected()) {
-	    	minDamage = minDamage / exposeTrapperDamage;
-	    	maxDamage = maxDamage / exposeTrapperDamage;
-	        minBackstabDamage = minBackstabDamage / exposeTrapperDamage;
-	        maxBackstabDamage = maxBackstabDamage / exposeTrapperDamage;
-	    	minThrowDamage = minThrowDamage / exposeTrapperDamage;
-	    	maxThrowDamage = maxThrowDamage / exposeTrapperDamage;
+	    	minDamage /= exposeTrapperDamage;
+	    	maxDamage /= exposeTrapperDamage;
+	        minBackstabDamage /= exposeTrapperDamage;
+	        maxBackstabDamage /= exposeTrapperDamage;
+	    	minThrowDamage /= exposeTrapperDamage;
+	    	maxThrowDamage /= exposeTrapperDamage;
 			expose1.setDisable(false);
 			expose3.setDisable(false);
 			expose2.setDisable(false);
