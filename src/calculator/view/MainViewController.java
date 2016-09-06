@@ -113,7 +113,7 @@ public class MainViewController {
 		throwDash.setVisible(false);
 		throwDamageEquals.setVisible(false);
 		backstabDamageEquals.setVisible(false);
-		versionNumber.setText("v1.3.1");
+		versionNumber.setText("v1.3.2");
 	}
 
 	@FXML
