@@ -21,8 +21,8 @@ public class MainViewController {
 	double knuckleDraggerDamage = 1.5;
 	double brutusSneakyPokerDamage = 1.5;
 	double expose1Damage = 1.1;
-	double expose2Damage = 1.15;
-	double expose3Damage = 1.2;
+	double expose2Damage = 1.2;
+	double expose3Damage = 1.3;
 	double exposeTrapperDamage = 1.3;
 	double muscleMilkDamage = 1.15;
 	double headshotDamage = 2;

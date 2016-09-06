@@ -179,7 +179,7 @@
                   </GridPane>
                </items>
             </SplitPane>
-            <Label alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="356.0" text="v1.3">
+            <Label fx:id="versionNumber" alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="356.0" text="v1.3">
                <VBox.margin>
                   <Insets left="8.0" right="8.0" />
                </VBox.margin>
