@@ -570,208 +570,208 @@ public class MainViewController {
 		} else if (weaponSelectBox.getValue().equals("Crafted Knife")) {
 			minDamage = 6;
 			maxDamage = 17;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 25.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Crafted Spear")) {
 			minDamage = 6;
 			maxDamage = 18;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 27;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Crafted Hatchet")) {
 			minDamage = 6;
 			maxDamage = 17;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 25.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Crafted Cudgel")) {
 			minDamage = 6;
 			maxDamage = 18;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 27;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Brass Knuckles")) {
 			minDamage = 6;
 			maxDamage = 18;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 27;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Tonfa")) {
 			minDamage = 6;
 			maxDamage = 18;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 27;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Hammer")) {
 			minDamage = 6;
 			maxDamage = 18;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 27;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 4;
 			maxThrowDamage = 12;
 
 		} else if (weaponSelectBox.getValue().equals("Crowbar")) {
 			minDamage = 7;
 			maxDamage = 21;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 31.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 5;
 			maxThrowDamage = 15;
 
 		} else if (weaponSelectBox.getValue().equals("Steel Pipe")) {
 			minDamage = 8;
 			maxDamage = 24;
-			minBackstabDamage = 12;
-			maxBackstabDamage = 36;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 5;
 			maxThrowDamage = 15;
 
 		} else if (weaponSelectBox.getValue().equals("Cleaver")) {
 			minDamage = 8;
 			maxDamage = 22;
-			minBackstabDamage = 12;
-			maxBackstabDamage = 33;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 5;
 			maxThrowDamage = 15;
 
 		} else if (weaponSelectBox.getValue().equals("Ice Axe")) {
 			minDamage = 7;
 			maxDamage = 23;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 34.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 5;
 			maxThrowDamage = 15;
 
 		} else if (weaponSelectBox.getValue().equals("Tanto Knife")) {
 			minDamage = 6;
 			maxDamage = 19;
-			minBackstabDamage = 9;
-			maxBackstabDamage = 28.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 5;
 			maxThrowDamage = 15;
 
 		} else if (weaponSelectBox.getValue().equals("Machete")) {
 			minDamage = 7;
 			maxDamage = 22;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 33;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 5;
 			maxThrowDamage = 15;
 
 		} else if (weaponSelectBox.getValue().equals("Javelin")) {
 			minDamage = 7;
 			maxDamage = 22;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 33;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 21;
 
 		} else if (weaponSelectBox.getValue().equals("Pipe Wrench")) {
 			minDamage = 9;
 			maxDamage = 27;
-			minBackstabDamage = 13.5;
-			maxBackstabDamage = 40.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Baseball Bat")) {
 			minDamage = 8;
 			maxDamage = 24;
-			minBackstabDamage = 12;
-			maxBackstabDamage = 36;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Bowie Knife")) {
 			minDamage = 7;
 			maxDamage = 23;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 34.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Kukri")) {
 			minDamage = 8;
 			maxDamage = 24;
-			minBackstabDamage = 12;
-			maxBackstabDamage = 36;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Tactical Machete")) {
 			minDamage = 8;
 			maxDamage = 24;
-			minBackstabDamage = 12;
-			maxBackstabDamage = 36;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Sabre")) {
 			minDamage = 7;
 			maxDamage = 23;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 34.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Tomahawk")) {
 			minDamage = 7;
 			maxDamage = 25;
-			minBackstabDamage = 10.5;
-			maxBackstabDamage = 37.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 7;
 			maxThrowDamage = 24;
 
 		} else if (weaponSelectBox.getValue().equals("Survival Spear")) {
 			minDamage = 9;
 			maxDamage = 27;
-			minBackstabDamage = 13.5;
-			maxBackstabDamage = 40.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 6;
 			maxThrowDamage = 18;
 
 		} else if (weaponSelectBox.getValue().equals("Sledgehammer")) {
 			minDamage = 11;
 			maxDamage = 33;
-			minBackstabDamage = 16.5;
-			maxBackstabDamage = 49.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 7;
 			maxThrowDamage = 21;
 
 		} else if (weaponSelectBox.getValue().equals("Katana")) {
 			minDamage = 9;
 			maxDamage = 26;
-			minBackstabDamage = 13.5;
-			maxBackstabDamage = 39;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 7;
 			maxThrowDamage = 21;
 
 		} else if (weaponSelectBox.getValue().equals("Fireman's Axe")) {
 			minDamage = 9;
 			maxDamage = 29;
-			minBackstabDamage = 13.5;
-			maxBackstabDamage = 43.5;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 7;
 			maxThrowDamage = 21;
 
 		} else if (weaponSelectBox.getValue().equals("Trident")) {
 			minDamage = 10;
 			maxDamage = 30;
-			minBackstabDamage = 15;
-			maxBackstabDamage = 45;
+			minBackstabDamage = minDamage * 1.5;
+			maxBackstabDamage = maxDamage * 1.5;
 			minThrowDamage = 7;
 			maxThrowDamage = 21;
 
