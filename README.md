@@ -1,6 +1,8 @@
 # Cullculator - by bloodred
 twitch.tv/loc_blood_red
 
+THIS PROJECT HAS BEEN MOVED TO: http://cullculator.byethost7.com/
+
 ![My image](http://i.imgur.com/DFByFaw.png)
 
 
